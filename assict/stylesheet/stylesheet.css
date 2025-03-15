@@ -1,0 +1,94 @@
+/* Reset default styles https://tamalsen.dev/#hero-section*/
+:root {
+    --section-width: 100px;
+    --section-height: 100px;
+    --font-size: 40px;
+    --background-color: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: #fff;
+    line-height: 1.6;
+    color: #fff;
+    overflow-x: hidden;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #2d2d2d;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    z-index: 100;
+    opacity: 80;
+
+}
+
+header #header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 20px;
+}
+
+header #header a:hover {
+    color: #f1c40f;
+}
+
+
+header #headerName p {
+    font-size: 27px; /* Slightly larger font size for the entire name */
+    font-weight: bold;
+    color: #00d4ff;
+    display: inline; /* Ensure the text stays inline */
+    font-family: Space Grotesk Bold;
+}
+
+header #headerName #headerUnderscore {
+    color: #2c3599; /* Blue color for the underscore */
+    font-size: 24px; /* Match the font size of the name */
+}
+
+header div p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+#home {
+    margin-top: 80px;
+    width: 100vw;
+    background-image: url("../image/back2.jpg");
+}
+
+/* With additional background properties */
+#home{
+    background: url("../image/back2.jpg") no-repeat center/cover;
+}
+
+#HompageName{
+    font-size: 90px;
+    color: aqua;
+    opacity: 1 !important;
+}
+
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+}

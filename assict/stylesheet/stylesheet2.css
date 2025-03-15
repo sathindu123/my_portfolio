@@ -1,0 +1,445 @@
+/* Reset default styles https://tamalsen.dev/#hero-section*/
+:root {
+    --section-width: 100px;
+    --section-height: 100px;
+    --font-size: 40px;
+    --background-color: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: #fff;
+    line-height: 1.6;
+    color: #fff;
+    overflow-x: hidden;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #2d2d2d;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    z-index: 100;
+    opacity: 80;
+
+}
+
+header #header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 20px;
+}
+
+header #header a:hover {
+    color: #f1c40f;
+}
+
+#home {
+    margin-top: 80px;
+    width: 100vw;
+    background-image: url("../image/back2.jpg");
+}
+
+/* With additional background properties */
+#home{
+    background: url("../image/back2.jpg") no-repeat center/cover;
+}
+
+header #headerName p {
+    font-size: 27px; /* Slightly larger font size for the entire name */
+    font-weight: bold;
+    color: #00d4ff;
+    display: inline; /* Ensure the text stays inline */
+    font-family: Space Grotesk Bold;
+}
+
+header #headerName #headerUnderscore {
+    color: #2c3599; /* Blue color for the underscore */
+    font-size: 24px; /* Match the font size of the name */
+}
+
+#HompageName{
+    font-size: 90px;
+    color: aqua;
+    opacity: 1 !important;
+}
+
+header div p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+}
+
+/* Home Page Styles */
+#homePage {
+    height: 100vh;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #2d2d2d;
+    background: url("../image/back2.jpg") no-repeat center/cover;
+}
+
+#homePage h1 {
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#homePage #p1 {
+    font-size: 1.5em;
+    color: white;
+    margin: 2px 0;
+    font-size: 30px;
+}
+
+#homePage .elementor-heading-title.elementor-size-default {
+    opacity: 10 !important;
+    font-size: 30px;
+    color: #2d2d2d;
+    font-weight: bold;
+}
+
+/* Dropdown Button and Scroll-Down Animation */
+.scroll-down {
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.dropdown-btn {
+    background: none; /* Change from 'none' to #2d2d2d to match the page background */
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-btn svg {
+    background-color: transparent; /* Remove the SVG's background to avoid overlap */
+    width: 100%;
+    height: 100%;
+    animation: scrollAnimation 2s infinite ease-in-out;
+}
+
+/* Keyframes for the Scroll Animation */
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px) scale(1.1); /* Moves down and slightly scales up */
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover Effect (Optional) */
+.dropdown-btn:hover svg {
+    transform: scale(1.2) translateY(-5px); /* Slight lift and enlarge on hover */
+    opacity: 1;
+}
+
+/* Ensure SVG paths inherit the animation */
+.dropdown-btn svg path {
+    stroke: #00d4ff; /* Match the cyan color from tamalsen.dev */
+    transition: stroke 0.3s ease;
+}
+
+.dropdown-btn:hover svg path {
+    stroke: #0099cc; /* Darker cyan on hover for contrast */
+}
+
+/* Text styling */
+.scroll-down p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+
+#homePage img {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#homePage div a img {
+    margin: 0 10px;
+}
+
+#homePage button {
+    /*background-color: #f1c40f;*/
+    /*color: #000;*/
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#homePage button:hover {
+    /*background-color: ;*/
+}
+
+/* About Section Styles */
+#about {
+    padding: 40px 20px;
+    background-color: #333;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#about div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#about dl {
+    font-size: 14px;
+}
+
+#about dl dd {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+#about dl dd:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+#about h6 {
+    font-size: 16px;
+    color: #f1c40f;
+    margin: 20px 0 10px;
+}
+
+#about p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#about h2:nth-of-type(2) {
+    margin-top: 40px;
+}
+
+#about div p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+#about div a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+#about div a:hover {
+    color: #d4ac0d;
+}
+
+/* Project Section Styles */
+#project {
+    padding: 40px 20px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+#project h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#project div {
+    margin: 20px 0;
+}
+
+#project img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#project p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#project a img {
+    margin-left: 10px;
+}
+
+/* Skills Section Styles */
+#skill {
+    padding: 40px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+#skill h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#skill div picture {
+    display: inline-block;
+    margin: 10px;
+}
+
+#skill div picture img {
+    width: 60px;
+    height: 60px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+}
+
+/* Assignment Section Styles */
+#assigment {
+    padding: 40px 20px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+#assigment h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#assigment a {
+    font-size: 16px;
+    color: #f1c40f;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+}
+
+#assigment a:hover {
+    color: #d4ac0d;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 40px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contact input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+#contact input[placeholder="your Masseage"] {
+    height: 100px;
+}
+
+#contact div p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+#contact div p a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+#contact div p a:hover {
+    color: #d4ac0d;
+}
+
+/* Footer/Icons Section */
+#icon2 {
+    padding: 20px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+#icon2 a img {
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #homePage h1 {
+        font-size: 32px;
+    }
+
+    #homePage p {
+        font-size: 14px;
+    }
+
+    #about h2, #project h2, #skill h2, #assigment h2, #contact h2 {
+        font-size: 22px;
+    }
+
+    #about div {
+        flex-direction: column;
+    }
+
+    #contact input {
+        width: 90%;
+    }
+}
