@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test 02</title>
+
+  <style>
+
+    div{
+      width: 20px;
+      aspect-ratio: 1/1;
+      border: 2px solid red;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+
+      animation-name: water_drop;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-timing-function: ease;
+    }
+
+    @keyframes water_drop {
+      from{
+        width: 20px;
+      }
+
+      to{
+        width: 500px;
+        aspect-ratio: 1/1;
+        opacity: 0;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+</html>
