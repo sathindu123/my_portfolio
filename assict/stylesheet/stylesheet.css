@@ -92,3 +92,36 @@ hr {
     border: 0;
     border-top: 1px solid #444;
 }
+
+/* Home Page Styles */
+#homePage {
+    height: 100vh;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #2d2d2d;
+    background: url("../image/back2.jpg") no-repeat center/cover;
+}
+
+#homePage h1 {
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#homePage #p1 {
+    font-size: 1.5em;
+    color: white;
+    margin: 2px 0;
+    font-size: 30px;
+}
+
+#homePage .elementor-heading-title.elementor-size-default {
+    opacity: 10 !important;
+    font-size: 30px;
+    color: #2d2d2d;
+    font-weight: bold;
+}
