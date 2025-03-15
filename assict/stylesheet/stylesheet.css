@@ -48,6 +48,16 @@ header #header a:hover {
     color: #f1c40f;
 }
 
+#home {
+    margin-top: 80px;
+    width: 100vw;
+    background-image: url("../image/back2.jpg");
+}
+
+/* With additional background properties */
+#home{
+    background: url("../image/back2.jpg") no-repeat center/cover;
+}
 
 header #headerName p {
     font-size: 27px; /* Slightly larger font size for the entire name */
@@ -62,28 +72,16 @@ header #headerName #headerUnderscore {
     font-size: 24px; /* Match the font size of the name */
 }
 
-header div p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-}
-
-
-#home {
-    margin-top: 80px;
-    width: 100vw;
-    background-image: url("../image/back2.jpg");
-}
-
-/* With additional background properties */
-#home{
-    background: url("../image/back2.jpg") no-repeat center/cover;
-}
-
 #HompageName{
     font-size: 90px;
     color: aqua;
     opacity: 1 !important;
+}
+
+header div p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }
 
 
@@ -125,6 +123,8 @@ hr {
     color: #2d2d2d;
     font-weight: bold;
 }
+
+/* Dropdown Button and Scroll-Down Animation */
 .scroll-down {
 
     position: absolute;
@@ -193,4 +193,29 @@ hr {
     font-size: 14px;
     color: #ccc;
     margin: 5px 0;
+}
+
+
+#homePage img {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#homePage div a img {
+    margin: 0 10px;
+}
+
+#homePage button {
+    /*background-color: #f1c40f;*/
+    /*color: #000;*/
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#homePage button:hover {
+    /*background-color: ;*/
 }
