@@ -125,3 +125,72 @@ hr {
     color: #2d2d2d;
     font-weight: bold;
 }
+.scroll-down {
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.dropdown-btn {
+    background: none; /* Change from 'none' to #2d2d2d to match the page background */
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-btn svg {
+    background-color: transparent; /* Remove the SVG's background to avoid overlap */
+    width: 100%;
+    height: 100%;
+    animation: scrollAnimation 2s infinite ease-in-out;
+}
+
+/* Keyframes for the Scroll Animation */
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px) scale(1.1); /* Moves down and slightly scales up */
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover Effect (Optional) */
+.dropdown-btn:hover svg {
+    transform: scale(1.2) translateY(-5px); /* Slight lift and enlarge on hover */
+    opacity: 1;
+}
+
+/* Ensure SVG paths inherit the animation */
+.dropdown-btn svg path {
+    stroke: #00d4ff; /* Match the cyan color from tamalsen.dev */
+    transition: stroke 0.3s ease;
+}
+
+.dropdown-btn:hover svg path {
+    stroke: #0099cc; /* Darker cyan on hover for contrast */
+}
+
+/* Text styling */
+.scroll-down p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
