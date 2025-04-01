@@ -1,4 +1,4 @@
-/* Reset default styles https://tamalsen.dev/#hero-section*/
+
 :root {
     --section-width: 100px;
     --section-height: 100px;
@@ -49,27 +49,28 @@ header #header a:hover {
 }
 
 #home {
+    background-color: var(--background-color);
     margin-top: 80px;
     width: 100vw;
     background-image: url("../image/back2.jpg");
 }
 
-/* With additional background properties */
+
 #home{
     background: url("../image/back2.jpg") no-repeat center/cover;
 }
 
 header #headerName p {
-    font-size: 27px; /* Slightly larger font size for the entire name */
+    font-size: 27px;
     font-weight: bold;
     color: #00d4ff;
-    display: inline; /* Ensure the text stays inline */
+    display: inline;
     font-family: Space Grotesk Bold;
 }
 
 header #headerName #headerUnderscore {
-    color: #2c3599; /* Blue color for the underscore */
-    font-size: 24px; /* Match the font size of the name */
+    color: #2c3599;
+    font-size: 24px;
 }
 
 #HompageName{
@@ -136,7 +137,7 @@ hr {
 }
 
 .dropdown-btn {
-    background: none; /* Change from 'none' to #2d2d2d to match the page background */
+    background: none;
     border: none;
     cursor: pointer;
     padding: 0;
@@ -150,20 +151,20 @@ hr {
 }
 
 .dropdown-btn svg {
-    background-color: transparent; /* Remove the SVG's background to avoid overlap */
+    background-color: transparent;
     width: 100%;
     height: 100%;
     animation: scrollAnimation 2s infinite ease-in-out;
 }
 
-/* Keyframes for the Scroll Animation */
+
 @keyframes scrollAnimation {
     0% {
         transform: translateY(0) scale(1);
         opacity: 1;
     }
     50% {
-        transform: translateY(10px) scale(1.1); /* Moves down and slightly scales up */
+        transform: translateY(10px) scale(1.1);
         opacity: 0.7;
     }
     100% {
@@ -172,23 +173,23 @@ hr {
     }
 }
 
-/* Hover Effect (Optional) */
+
 .dropdown-btn:hover svg {
-    transform: scale(1.2) translateY(-5px); /* Slight lift and enlarge on hover */
+    transform: scale(1.2) translateY(-5px);
     opacity: 1;
 }
 
-/* Ensure SVG paths inherit the animation */
+
 .dropdown-btn svg path {
-    stroke: #00d4ff; /* Match the cyan color from tamalsen.dev */
+    stroke: #00d4ff;
     transition: stroke 0.3s ease;
 }
 
 .dropdown-btn:hover svg path {
-    stroke: #0099cc; /* Darker cyan on hover for contrast */
+    stroke: #0099cc; /
 }
 
-/* Text styling */
+
 .scroll-down p {
     font-size: 14px;
     color: #ccc;
@@ -196,18 +197,18 @@ hr {
 }
 
 
-#homePage img {
+#aboutPage img {
     border-radius: 10px;
     margin: 20px 0;
 }
 
-#homePage div a img {
+div a img {
     margin: 0 10px;
 }
 
-#homePage button {
-    /*background-color: #f1c40f;*/
-    /*color: #000;*/
+#aboutPage button {
+    background-color: #f1c40f;
+    color: #000;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -216,6 +217,14 @@ hr {
     margin-top: 20px;
 }
 
-#homePage button:hover {
-    /*background-color: ;*/
+#aboutPage button:hover {
+    background-color: green;
+}
+
+#aboutPage p{
+    margin-left: 40px;
+}
+
+#aboutPage img{
+
 }
