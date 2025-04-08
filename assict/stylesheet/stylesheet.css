@@ -292,7 +292,7 @@ div a img {
 }
 
 #aboutPage #sss{
-    padding: 10px 5px;
+    padding: 5px 0px;
     color: white;
     text-align: center;
     font-size: 16px;
@@ -315,7 +315,7 @@ div a img {
 }
 
 .about-text{
-    margin-top: 40px;
+    margin-top: 5px;
 }
 .social-links{
     margin-top: 50px;
@@ -325,17 +325,149 @@ div a img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;
-    margin-top: 0%;
+    margin-top: 0px;
+
+
 }
 
 .education-details .education-item{
     margin-top: 0%;
     text-align: center;
+    background-color: #1a1a2e;
+    height: 100%;
+
 }
 
 .education-details .education-item2{
+    background-color: #1a1a2e;
+    margin-top: 0px;
+    text-align: left;
+    margin-right: 0%;
+    font-size: 12px;
+
+}
+
+.education-details .education-item2 p{
+    margin-top: 0px;
     text-align: left;
 }
+
+
+
+
+#project {
+    padding: 40px 20px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+#project h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#project div {
+    margin: 20px 0;
+}
+
+#project img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#project p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#project a img {
+    margin-left: 10px;
+}
+
+
+
+/* Assignment Section Styles */
+#assigment {
+    padding: 40px 20px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+#assigment h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#assigment a {
+    font-size: 16px;
+    color: #f1c40f;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+}
+
+#assigment a:hover {
+    color: #d4ac0d;
+}
+
+
+/* Contact Section Styles */
+#contact {
+    padding: 40px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contact input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+#contact input[placeholder="your Masseage"] {
+    height: 100px;
+}
+
+#contact div p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+#contact div p a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+#contact div p a:hover {
+    color: #d4ac0d;
+}
+
+/* Footer/Icons Section */
+#icon2 {
+    padding: 20px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+#icon2 a img {
+    margin: 0 10px;
+}
+
 
 /* About Section Styles */
 /*#about {*/
