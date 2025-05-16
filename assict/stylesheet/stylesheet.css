@@ -25,43 +25,51 @@ body {
     overflow-x: hidden;
 }
 
-/* Header */
 header {
+    width: 100vw;
+    height: 8vh;
     position: fixed;
     top: 0;
-    width: 100vw;
-    background: rgba(45, 45, 45, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 15px 30px;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1% 3%;
+    background-color: #090810;
+    opacity: 0.9;
+    z-index: 1000;
 }
 
-header #headerName p {
+
+header p#headerp{
+    position: absolute;
     font-size: 28px;
     font-weight: bold;
     color: var(--primary-color);
     display: inline;
+    margin: 0;
 }
 
-header #headerName #headerUnderscore {
+header #headerUnderscore {
     color: #2c3599;
     font-size: 24px;
 }
 
-header #header a {
-    color: var(--text-light);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s ease;
+header nav div {
+    display: flex;
+    gap: 2rem;
 }
 
-header #header a:hover {
-    color: var(--secondary-color);
+header nav div a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+header nav div a:hover {
+    color: #1fcdff;
 }
 
 hr {
@@ -225,12 +233,16 @@ hr {
 }
 
 #About-img img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    border-radius: 5%;
+    box-shadow: 0 0 50px 6px rgba(18, 255, 219, 0.5);
     transition: transform 0.3s ease;
+    height: auto;
+    display: block;
+    margin: auto;
 }
+
+
 
 #About-img img:hover {
     transform: scale(1.05);
@@ -597,50 +609,136 @@ section#Assignment > div.content:hover {
 
 
 
-/* Contact Section */
-#contact {
-    padding: 80px 20px;
-    background-color: var(--background-medium);
+/*Contact section*/
+
+section#Contact {
+    background-color: #090810;
+    position: relative;
+}
+
+section#Contact > div.topic {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+    color: #4CC9FE;
+}
+
+section#Contact > div.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+
+section#Contact > div.content > div.left {
+    margin: 5% 8% 5% 20%;
+}
+
+section#Contact > div.content > div.right {
+    margin: 5% 20% 5% 8%;
+}
+
+section#Contact > div.topic > h2 {
+    font-size: 2.5rem;
+    /*color: white;*/
+}
+
+section#Contact > div.content > div.left > div {
+    display: flex;
+    align-items: center;
     text-align: center;
+    margin: 3% 5% 5% 5%;
 }
 
-#contact h2 {
-    font-size: 2.5em;
-    color: var(--text-light);
-    margin-bottom: 30px;
+section#Contact > div.content > div.left > div > img {
+    width: 5%;
+    margin-right: 3%;
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+section#Contact > div.content > div.left > div > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 10px;
-    background: #333;
-    color: var(--text-light);
-    font-size: 1em;
-    transition: background 0.3s ease;
+section#Contact > div.content > div.left > div > p {
+    color: #ffffff;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    background: #444;
-    outline: none;
+section#Contact > div.content > div.left > h3 {
+    font-size: 2rem;
+    margin: 5% 5%;
+    color: rgba(255, 255, 255, 0.9);
 }
 
-.contact-form textarea {
-    height: 150px;
-    resize: none;
+section#Contact > div.content > div.left > p {
+    font-size: 1.4rem;
+    width: 70%;
+    margin: 10% 5% 5% 5%;
+    color: #bee9ff;
 }
 
-.contact-form button {
-    background: var(--gradient);
+section#Contact > div.content > div.left > div {
+    transition: transform 0.3s;
+}
+
+section#Contact > div.content > div.left > div:hover {
+    transform: translateX(8px);
+}
+
+section#Contact > div.content > div.left > div > p {
+    font-size: 1.2rem;
+}
+
+section#Contact > div.content > div.right > div {
+    margin: 5% 5% 8% 5%;
+}
+
+section#Contact > div.content > div.right > div > input {
+    width: 90%;
+    height: 6vh;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid rgba(41, 88, 104, 0.61);
+    padding: 3%;
+    transition: transform 0.3s;
+}
+
+section#Contact > div.content > div.right > div > input:hover {
+    transform: translateY(-2px);
+}
+
+section#Contact > div.content > div.right > div > textarea {
+    width: 90%;
+    height: 20vh;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid rgba(41, 88, 104, 0.61);
+    padding: 3%;
+    transition: transform 0.3s;
+}
+
+section#Contact > div.content > div.right > div > textarea:hover {
+    transform: translateY(-2px);
+}
+
+section#Contact > div.content > div.right > button {
+    width: 81%;
+    height: 6vh;
+    margin: 5% 5% 8% 5%;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid rgba(41, 88, 104, 0.61);
+    transition: transform 0.3s;
+}
+
+section#Contact > div.content > div.right > button:hover {
+    transform: scale(1.03);
 }
 
 
@@ -1931,9 +2029,15 @@ section#Assignment > div.content:hover {
         padding: 0.5% 0.5%;
     }
 
-    header img {
-        width: 8%;
+    header p#headerp{
+        font-size: 10px;
+
     }
+
+    header #headerUnderscore {
+        font-size: 10px;
+    }
+
 
     header nav div {
         gap: 0.4rem;
@@ -1943,7 +2047,18 @@ section#Assignment > div.content:hover {
         font-size: 10%;
     }
 
+    header hr {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        border: 0;
+        border-top: 1px solid #444;
+    }
     /* home section */
+    #home {
+        margin-top: 0;
+    }
+
+
 
     #homePage h1{
         font-size: 1.3rem;
@@ -1956,17 +2071,62 @@ section#Assignment > div.content:hover {
     }
 
     /* about me section */
+    #aboutPage {
+        margin-top: 0;
+    }
+
+    #aboutPage h2{
+        font-size: 1.1rem;
+    }
+
+    #About-img img {
+        width: 95%; /* or 100% if you want full width */
+        margin-top: 0;
+    }
+
+    #aboutPage .social-links img{
+        width: 15%;
+        margin: 15px 3px;
+    }
+
+    #aboutPage button{
+        font-size: 0.4rem;
+    }
 
     #aboutPage #about-Main p{
         font-size: 0.5rem;
     }
 
-    #About-img img {
-        width: 80px;
+    .about-details {
+        /*display: grid;*/
+        /*grid-template-columns: 1fr 1fr;*/
+        /*gap: 20px;*/
+        /*max-width: 800px;*/
+        /*margin: 40px auto;*/
+    }
+
+    .about-details #about-dl p {
+        font-size: 0.4em;
 
     }
 
+    .about-details #about-dd p {
+        font-size: 0.4em;
+
+    }
+
+    #aboutPage .about-text #sss{
+        font-size: 0.7rem;
+        margin: 5px 0;
+    }
+    #aboutPage .about-text #current{
+        font-size: 0.4rem;
+    }
+
     /* education section */
+    section#Education {
+        margin-top: 10px;
+    }
     section#Education > div.topic {
         height: 12vh;
     }
