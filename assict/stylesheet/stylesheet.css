@@ -232,6 +232,8 @@ hr {
     box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
 }
 
+
+
 #About-img img {
     width: 50%;
     border-radius: 5%;
@@ -756,31 +758,6 @@ section#Contact > div.content > div.right > button:hover {
 /* Small Mobile size */
 @media screen and (max-width: 1441px) {
 
-    /* header section */
-    header {
-        height: 7vh;
-        padding: 1% 2%;
-    }
-
-    header img {
-        width: 7%;
-    }
-
-    header nav div {
-        gap: 1.5rem;
-    }
-
-    header nav div a {
-        font-size: 95%;
-    }
-
-    /* home section */
-
-
-    /* about me section */
-
-
-
 
     /* education section */
     section#Education > div.topic > h2 {
@@ -911,73 +888,89 @@ section#Contact > div.content > div.right > button:hover {
     section#Skills > div.content > div > div.secondContent > div > img {
         width: 55%;
     }
-
     /*Contact section*/
-
-    /* footer */
-    footer > div.topic > h3 {
-        font-size: 1.4rem;
+    section#Contact > div.topic {
+        height: 18vh;
     }
 
-    footer > div.content > div.left {
-        margin: 2% 6% 2% 12%;
+    section#Contact > div.topic > h2 {
+        font-size: 2.2rem;
     }
 
-    footer > div.content > div.right {
-        margin: 2% 12% 2% 6%;
+    section#Contact > div.content > div.left {
+        margin: 5% 6% 5% 15%;
     }
 
-    footer > div.content > div.left > h3 {
-        font-size: 1.4rem;
-        letter-spacing: 4px;
+    section#Contact > div.content > div.right {
+        margin: 5% 15% 5% 6%;
     }
 
-    footer > div.content > div.left > p {
-        font-size: 0.95rem;
+    section#Contact > div.content > div.left > h3 {
+        font-size: 1.8rem;
     }
 
-    footer > div.content > div.left > div.email > a {
-        font-size: 14px;
+    section#Contact > div.content > div.left > p {
+        font-size: 1.3rem;
+        width: 80%;
     }
 
-    footer > div.content > div.right > div > a > img {
-        width: 22px;
-        margin-left: 12%;
+    section#Contact > div.content > div.left > div > img {
+        width: 6%;
     }
 
-    footer > div.content > div.right > div.name > h4 {
-        font-size: 14px;
-        width: 130%;
+    section#Contact > div.content > div.left > div > a,
+    section#Contact > div.content > div.left > div > p {
+        font-size: 1.1rem;
     }
 
-    footer > div.content > div.right > div.image {
-        width: 50%;
+    section#Contact > div.content > div.right > div > input,
+    section#Contact > div.content > div.right > div > textarea {
+        width: 85%;
     }
+
+    section#Contact > div.content > div.right > button {
+        width: 77%;
+    }
+
+
+
 }
 
 /* Laptop size */
 @media screen and (max-width: 1025px) {
     /* header section */
     header {
-        height: 7vh;
-        padding: 1% 2%;
+        width: 100vw;
+        height: 5vh;
+        padding: 0.5% 0.5%;
     }
 
-    header img {
-        width: 7%;
+
+    header #headerUnderscore {
+        font-size: 12px;
     }
+
 
     header nav div {
-        gap: 1.5rem;
+        gap: 0.8rem;
     }
 
-    header nav div a {
-        font-size: 95%;
-    }
 
+    header hr {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        border: 0;
+        border-top: 1px solid #444;
+    }
     /* home section */
 
+    header p#headerp{
+        font-size: 18px;
 
+    }
+    header nav div a {
+        font-size: 80%;
+    }
     /* about me section */
 
 
@@ -1123,46 +1116,6 @@ section#Contact > div.content > div.right > button:hover {
         width: 77%;
     }
 
-    /* footer */
-    footer > div.topic > h3 {
-        font-size: 1.4rem;
-    }
-
-    footer > div.content > div.left {
-        margin: 2% 6% 2% 12%;
-    }
-
-    footer > div.content > div.right {
-        margin: 2% 12% 2% 6%;
-    }
-
-    footer > div.content > div.left > h3 {
-        font-size: 1.4rem;
-        letter-spacing: 4px;
-    }
-
-    footer > div.content > div.left > p {
-        font-size: 0.95rem;
-    }
-
-    footer > div.content > div.left > div.email > a {
-        font-size: 14px;
-    }
-
-    footer > div.content > div.right > div > a > img {
-        width: 22px;
-        margin-left: 12%;
-    }
-
-    footer > div.content > div.right > div.name > h4 {
-        font-size: 14px;
-        width: 130%;
-    }
-
-    footer > div.content > div.right > div.image {
-        width: 50%;
-    }
-
 }
 
 /* Tablet size */
@@ -1170,30 +1123,103 @@ section#Contact > div.content > div.right > button:hover {
     /* header section */
     header {
         width: 100vw;
-        height: 6vh;
-        padding: 1% 2%;
+        height: 5vh;
+        padding: 0.5% 0.5%;
     }
 
-    header img {
-        width: 10%;
-        margin: 0 auto;
+    header p#headerp{
+        font-size: 12px;
+
     }
 
-    header > nav > div#header_links {
-        display: none;
+    header #headerUnderscore {
+        font-size: 12px;
     }
 
-    header > img#menu_icon{
-        display: block;
-        width: 5%;
-        position: absolute;
-        right: 1%;
+
+    header nav div {
+        gap: 0.8rem;
     }
 
+    header nav div a {
+        font-size: 30%;
+    }
+
+    header hr {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        border: 0;
+        border-top: 1px solid #444;
+    }
     /* home section */
+    #home {
+        margin-top: 0;
+    }
 
+
+
+    #homePage h1{
+        font-size: 3.3rem;
+    }
+    #homePage #p1{
+        font-size: 1.8rem;
+    }
+    #homePage .elementor-heading-title {
+        font-size: 1.2rem;
+    }
 
     /* about me section */
+    #aboutPage {
+        margin-top: 0;
+    }
+
+    #aboutPage h2{
+        font-size: 1.8rem;
+    }
+
+    #About-img img {
+        width: 50%; /* or 100% if you want full width */
+        margin-top: 0;
+    }
+
+    #aboutPage .social-links img{
+        width: 10%;
+        margin: 35px 7px;
+    }
+
+    #aboutPage button{
+        font-size: 0.6rem;
+    }
+
+    #aboutPage #about-Main p{
+        font-size: 0.9rem;
+    }
+
+    .about-details {
+        /*display: grid;*/
+        /*grid-template-columns: 1fr 1fr;*/
+        /*gap: 20px;*/
+        /*max-width: 800px;*/
+        /*margin: 40px auto;*/
+    }
+
+    .about-details #about-dl p {
+        font-size: 0.8em;
+
+    }
+
+    .about-details #about-dd p {
+        font-size: 0.7em;
+
+    }
+
+    #aboutPage .about-text #sss{
+        font-size: 1.3rem;
+        margin: 5px 0;
+    }
+    #aboutPage .about-text #current{
+        font-size: 0.6rem;
+    }
 
 
     /* education section */
@@ -1453,24 +1479,99 @@ section#Contact > div.content > div.right > button:hover {
         padding: 0.5% 0.5%;
     }
 
-    header img {
-        width: 8%;
-        margin: 0 auto;
+    header p#headerp{
+        font-size: 10px;
+
     }
+
+    header #headerUnderscore {
+        font-size: 10px;
+    }
+
 
     header nav div {
         gap: 0.4rem;
     }
 
     header nav div a {
-        font-size: 50%;
+        font-size: 10%;
     }
 
+    header hr {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        border: 0;
+        border-top: 1px solid #444;
+    }
     /* home section */
+    #home {
+        margin-top: 0;
+    }
 
+
+
+    #homePage h1{
+        font-size: 1.3rem;
+    }
+    #homePage #p1{
+        font-size: 0.8rem;
+    }
+    #homePage .elementor-heading-title {
+        font-size: 0.8rem;
+    }
 
     /* about me section */
+    #aboutPage {
+        margin-top: 0;
+    }
 
+    #aboutPage h2{
+        font-size: 1.1rem;
+    }
+
+    #About-img img {
+        width: 95%; /* or 100% if you want full width */
+        margin-top: 0;
+    }
+
+    #aboutPage .social-links img{
+        width: 15%;
+        margin: 15px 3px;
+    }
+
+    #aboutPage button{
+        font-size: 0.4rem;
+    }
+
+    #aboutPage #about-Main p{
+        font-size: 0.5rem;
+    }
+
+    .about-details {
+        /*display: grid;*/
+        /*grid-template-columns: 1fr 1fr;*/
+        /*gap: 20px;*/
+        /*max-width: 800px;*/
+        /*margin: 40px auto;*/
+    }
+
+    .about-details #about-dl p {
+        font-size: 0.4em;
+
+    }
+
+    .about-details #about-dd p {
+        font-size: 0.4em;
+
+    }
+
+    #aboutPage .about-text #sss{
+        font-size: 0.7rem;
+        margin: 5px 0;
+    }
+    #aboutPage .about-text #current{
+        font-size: 0.4rem;
+    }
 
     /* education section */
     section#Education > div.topic {
@@ -1749,22 +1850,99 @@ section#Contact > div.content > div.right > button:hover {
         padding: 0.5% 0.5%;
     }
 
-    header img {
-        width: 8%;
+    header p#headerp{
+        font-size: 10px;
+
     }
+
+    header #headerUnderscore {
+        font-size: 10px;
+    }
+
 
     header nav div {
         gap: 0.4rem;
     }
 
     header nav div a {
-        font-size: 40%;
+        font-size: 10%;
     }
 
+    header hr {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        border: 0;
+        border-top: 1px solid #444;
+    }
     /* home section */
+    #home {
+        margin-top: 0;
+    }
 
+
+
+    #homePage h1{
+        font-size: 1.3rem;
+    }
+    #homePage #p1{
+        font-size: 0.8rem;
+    }
+    #homePage .elementor-heading-title {
+        font-size: 0.8rem;
+    }
 
     /* about me section */
+    #aboutPage {
+        margin-top: 0;
+    }
+
+    #aboutPage h2{
+        font-size: 1.1rem;
+    }
+
+    #About-img img {
+        width: 95%; /* or 100% if you want full width */
+        margin-top: 0;
+    }
+
+    #aboutPage .social-links img{
+        width: 15%;
+        margin: 15px 3px;
+    }
+
+    #aboutPage button{
+        font-size: 0.4rem;
+    }
+
+    #aboutPage #about-Main p{
+        font-size: 0.5rem;
+    }
+
+    .about-details {
+        /*display: grid;*/
+        /*grid-template-columns: 1fr 1fr;*/
+        /*gap: 20px;*/
+        /*max-width: 800px;*/
+        /*margin: 40px auto;*/
+    }
+
+    .about-details #about-dl p {
+        font-size: 0.4em;
+
+    }
+
+    .about-details #about-dd p {
+        font-size: 0.4em;
+
+    }
+
+    #aboutPage .about-text #sss{
+        font-size: 0.7rem;
+        margin: 5px 0;
+    }
+    #aboutPage .about-text #current{
+        font-size: 0.4rem;
+    }
 
 
     /* education section */
@@ -1963,61 +2141,7 @@ section#Contact > div.content > div.right > button:hover {
         margin: 3% 0 5% 3%;
     }
 
-    /* footer */
-    footer > div.topic {
-        padding-top: 2%;
-        margin-bottom: 2%;
-    }
 
-    footer > div.topic > h3 {
-        font-size: 1rem;
-    }
-
-    footer > div.content > div.left {
-        margin: 2% 8%;
-    }
-
-    footer > div.content > div.right {
-        margin: 1% 8%;
-    }
-
-    footer > div.content > div.left > h3 {
-        font-size: 0.7rem;
-        letter-spacing: 2px;
-        margin-bottom: 5%;
-    }
-
-    footer > div.content > div.left > p {
-        font-size: 0.5rem;
-        margin-bottom: 5%;
-    }
-
-    footer > div.content > div.left > div.email {
-        margin-bottom: 8%;
-    }
-
-    footer > div.content > div.left > div.email > img {
-        margin-right: 1.5%;
-        width: 15px;
-    }
-
-    footer > div.content > div.left > div.email > a {
-        font-size: 65%;
-    }
-
-    footer > div.content > div.right > div > a > img {
-        width: 15%;
-        margin-left: 4%;
-    }
-
-    footer > div.content > div.right > div.name > h4 {
-        font-size: 0.4rem;
-        margin-top: 3px;
-    }
-
-    footer > div.content > div.right > div.image {
-        width: 50%;
-    }
 }
 
 /* Small Mobile size */

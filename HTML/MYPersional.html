@@ -21,7 +21,7 @@
             <a href="#aboutPage">About me</a>
             <a href="#Education">Education</a>
             <a href="#Assignment">Assignment</a>
-            <a href="#Project">Project</a>
+            <a href="#project">Project</a>
             <a href="#Skills">Skill</a>
             <a href="#Contact">Contact</a>
         </div>
@@ -35,7 +35,7 @@
         <br>
         <div class="elementor-heading-title elementor-size-default">As featured in</div>
         <div class="scroll-down">
-            <button class="dropdown-btn">
+            <button class="dropdown-btn" id="dropdown-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="72" height="72" preserveAspectRatio="xMidYMid meet">
                     <defs><clipPath id="__lottie_element_2"><rect width="72" height="72" x="0" y="0"></rect></clipPath></defs>
                     <g clip-path="url(#__lottie_element_2)">
@@ -72,7 +72,7 @@
                 about building great software that improves the lives<br>
                 of those around me.
             </p>
-            <button type="button">ABOUT ME</button>
+            <button type="button" id="about">ABOUT ME</button>
             <div class="social-links">
                 <a href="https://web.facebook.com/sathindu.sathsara.98/"><img src="../assict/image/ss.jpg" alt="Facebook"></a>
                 <a href="https://github.com/sathindu123"><img src="../assict/image/icons8-github-100.png" alt="GitHub"></a>
@@ -87,7 +87,7 @@
        </div>
 
     </div>
-
+    <div id="moko"></div>
     <br>
     <br>
     <br>
@@ -369,16 +369,16 @@
                 or just want to chat, feel free to reach out. I’d love to hear from you!
             </p>
             <div class="address">
-                <img src="Assets/Let's%20contact/pngwing.com%20(5).png">
+                <img src="../assict/image/pngwing.com%20(5).png">
                 <p>Kaluthara, Sri lanka</p>
             </div>
             <div class="email">
-                <img src="Assets/Let's%20contact/4202011_email_gmail_mail_logo_social_icon.png">
-                <a href="mailto:sanjeewalahiru057@gmail.com">sathindusathsarakumara@gmail.com</a>
+                <img src="../assict/image/4202011_email_gmail_mail_logo_social_icon.png">
+                <a href="sathindusathsarakumara@gmail.com">sathindusathsarakumara@gmail.com</a>
             </div>
             <div class="phone">
-                <img src="Assets/Let's%20contact/%5BCITYPNG.COM%5DHD%20Green%20Round%20Circle%20Phone%20Icon%20Transparent%20PNG%20-%202000x2000.png">
-                <a href="tel:+94719068149">+94 71 428 5771</a>
+                <img src="../assict/image/%5BCITYPNG.COM%5DHD%20Green%20Round%20Circle%20Phone%20Icon%20Transparent%20PNG%20-%202000x2000.png">
+                <a href="tel:+94714285771">+94 71 428 5771</a>
             </div>
         </div>
 
@@ -398,7 +398,22 @@
     </div>
 </section>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
 
+        $('#dropdown-btn').on('click', function() {
+            $('html, body').animate({
+                scrollTop: $('#aboutPage').offset().top
+            }, 800); // 800ms for smooth scrolling
+        });
+
+        $('#about').on('click', function() {
+            $('html, body').animate({
+                scrollTop: $('#moko').offset().top
+            }, 800); // 800ms for smooth scrolling
+        });
+
+</script>
 
 </body>
 </html>
